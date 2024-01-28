@@ -1,0 +1,78 @@
+*{margin: 0%;padding: 0%;}
+
+/*Home*/
+html#Home {
+  background-color: rgb(255, 255, 255);
+}
+
+/*top*/
+header{display: flex;justify-content: center;}
+.Logo, .Top {
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 25px;
+}
+.Top li{
+  margin-right: 25px;
+  display: inline-block;
+  vertical-align: middle;
+}
+.Top a{
+  font-size:25px;
+  text-decoration:none;
+  color: black;
+  vertical-align: middle;
+}
+.Top a:hover{
+  color: #3363cd;
+}
+.Logo h1{
+  font-size: 50px;
+  vertical-align: middle;
+  color: black;
+}
+
+/*Main text for home*/
+.typing {
+  height: 90vh;
+  /*This part is important for centering*/
+  display: grid;
+  place-items: center;
+}
+.typing-demo {
+  width: 22ch;
+  animation: typing 2s steps(22), blink .5s step-end infinite alternate;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 3px solid;
+  font-family: monospace;
+  font-size: 3em;
+}
+@keyframes typing {
+  from {
+    width: 0
+  }
+}
+@keyframes blink {
+  50% {
+    border-color: transparent
+  }
+}
+/*Projects*/
+.btn {
+  padding: 1em 2em; /* Поля3 по вертикали и горизонтали */
+  background-color: transparent; /* Прозрачный цвет фона */
+  font-size: 1.5em; /* Размер текста */
+  text-transform: uppercase; /* Все буквы заглавные */
+  color: #000000; /* Цвет текста */
+  border: 2px solid #000000; /* Параметры рамки */
+  border-radius: 0.5em; /* Радиус скругления */
+  position: absolute;
+  top: 50%; /* устанавливаем кнопку на середину по вертикали */
+  left: 50%; /* устанавливаем кнопку на середину по горизонтали */
+  transform: translate(-50%, -50%); /* с помощью трансформации смещаем кнопку на половину своего размера относительно центра контейнера */
+ }
+ .btn:hover {
+  color: #00CF00;
+  border: solid #00CF00;
+}
